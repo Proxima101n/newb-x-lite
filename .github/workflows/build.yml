@@ -60,7 +60,7 @@ jobs:
     - run: |
     - run: |
         mkdir -p tool/data
-        wget -O tool/data/shaderc https://github.com/devendrn/newb-shader/releases/download/v16/shaderc-linux-x64
+        wget -O tool/data/shaderc https://github.com/devendrn/newb-shader/releases/download/dev/shaderc-linux-x64
         chmod +x tool/data/shaderc
         ./build.sh setup
         ./build.sh pack -p android -v ${{ inputs.subversion }} --no-zip
