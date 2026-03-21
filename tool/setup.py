@@ -60,10 +60,10 @@ def get_shaderc_url(data_path: str, os_name: str, arch: str):
         shaderc_url += "osx-x64"
     elif os_name == "Linux" or os_name == "Android":
         if arch == 'x86_64':
-            shaderc_url += "linux-x64" 
-        if arch in ['aarch64']:
+            shaderc_url += "linux-x64"
+        elif arch in ['aarch64']:
             shaderc_url += "android-arm64"
-        elif arch in ['armv8l', 'armv8l']:
+        elif arch in ['armv8l']:
             shaderc_url += "android-arm"
         else:
             progress.console.print("No shaderc version found for", arch, style='red')
@@ -75,7 +75,6 @@ def get_shaderc_url(data_path: str, os_name: str, arch: str):
 
 
 def check_and_apply_termux_fix():
-    # libc++_shared.so not found fix for termux
     lib_path = "tool/lib"
     if not os.path.exists(lib_path):
         os.mkdir(lib_path)
@@ -111,7 +110,6 @@ def run(args):
     if os_name == "Linux":
         check_and_apply_termux_fix()
 
-    # compare with existing setup, remove if update is needed
     if conf.get("shaderc_url") != shaderc_url and os.path.exists(shaderc_path):
         os.remove(shaderc_path)
     if conf.get("mat_src_url") != NS_DEV_MAT_SRC_URL:
@@ -140,4 +138,3 @@ def run(args):
     save_conf(conf)
 
     progress.console.print("[bold green]All done!")
-
