@@ -7,8 +7,8 @@ description = '''
 %v
 §3https://devendrn.github.io/newb-shader/
 ''' # %w = patch warning, %v = version
-authors = ["devendrn"]
-url = "https://devendrn.github.io/newb-shader/"
+authors = ["Proxima"]
+url = "https://github.com/Proxima101n/newb-x-lite"
 uuid ="7d3f9a12-4b8c-4e21-93ad-6f1c2e874d50" # Use https://www.uuidgenerator.net/version4
 materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 
