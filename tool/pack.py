@@ -154,13 +154,13 @@ def run(args):
 
     patch_warning = "Only works with "
     if profile == 'android':
-        patch_warning += "Patched Minecraft"
+        patch_warning += "MB loader (best) or Patched Minecraft"
     elif profile == 'windows':
-        patch_warning += "BetterRenderDragon"
+        patch_warning += "BetterRenderdragon (best) or matject"
     elif profile == 'merged':
-        patch_warning += "BetterRenderDragon or Patched Minecraft"
+        patch_warning += "For android, MB loader (best) or Patched Minecraft, for Windows, BetterRenderdragon (best) or matject"
     else:  # ios
-        patch_warning = "Materials need to be installed manually for shader to work"
+        patch_warning = "Requires manually adding Materials, jailbreak/sideloading required"
 
     pack_description = pack_description.replace("%w", patch_warning).replace("%v", "v" + pack_version + "-" + args.p)
     pack_config['description'] = pack_description
