@@ -1,42 +1,43 @@
 # Newb X Lite
 
-A fork of Newb X Legacy that stays true to its original philosophy, lightweight, clean, and intentional.
+A fork of Newb X Legacy dev branch.
 
-Most forks of Newb X Legacy claim to be lightweight while adding god rays, bloom, and realistic water until the pack is heavier than what it replaced. Newb X Lite takes the opposite approach. Every effect earns its place. If it does not improve the experience meaningfully it gets cut.
+I have a pretty nice goal, removing the slight bloat newb x legacy had and make the lighting better ( in my opinion ) and realistic, I try to make sure things that the ones that stay have good performance and looks.
 
-The goal is not a barebones shader. It is a lean, modern pack that feels polished without feeling heavy. Clean lighting, tasteful visuals, smooth performance, even on mid and low end hardware.
+You get a really natural looking shader that's realistic, lighting, gamma, brightness, water and all that juicy stuff. Runs pretty well on hardware you'll play bedrock on ( not super low end phones they might get very low frames )
+
+to say short it's a realistic vanilla pack ( somehow )
 
 ## What changed from Newb X Legacy
-- Improved lighting, more natural day cycle from dawn to night
-- Removed unnecessary visual bloat
-- Optimized for performance without sacrificing quality
-- Multiple subpack options so you choose how much you want
+
+- Reworked lighting with a natural day cycle — dawn, morning, noon, dusk, and night each are reworked to feel and look natural and realistic.
+- Cooler and more neutral sun colors that shift naturally with time of day
+- Clear underwater visibility
+- Reduced fog for a cleaner, more open world
+- Various performance improvements
+Note: some of these are optional btw
 
 ## Installation
-- **Android** — MB Loader or Patched Minecraft
-- **Windows** — BetterRenderDragon
-- **iOS** — Requires manually adding materials, jailbreak or sideloading required
 
-## Subpacks
-- **Default** — lite version, purest experience
-- **Chunk Animation** — adds smooth chunk loading animation
-- **Water Effects** — enhanced water, slightly more intensive
-- **Full** — chunk animation and water effects combined
+- **Android** — MB Loader (recommended) or Patched Minecraft
+- **Windows** — BetterRenderDragon (recommended) or matject
+- **iOS** — Requires manually adding materials, jailbreak or sideloading required. the ios version is there for your dedication lol
 
 ## Credits
+
 Original shader by devendrn and Newb Shader Contributors
 Source: https://github.com/devendrn/newb-x-mcbe
 
 ---
 
-*This project is still in early development. Most of what is described here is the intended direction rather than the finished product. Feedback and patience appreciated.*
+*Still in early development. Feedback welcome.*
 
 ## Near future
-- Lighting overhaul, natural day cycle from dawn to night
-- Strip out some things I have in mind
-- First beta release, looking for community testers on different devices and platforms
+- First beta release, looking for community testers across different devices and platforms
+- Further lighting refinements
+- Strip out unused code and textures
 
 ## Long future
-- Optimization pass based on community feedback
+- Optimization stuffs based on community feedback
 - v1.0.0 public release on Modrinth and CurseForge
 - A separate night vision pack made from scratch
