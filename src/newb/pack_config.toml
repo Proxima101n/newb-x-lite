@@ -76,7 +76,7 @@ Default
 define = "BOX_CLOUDS"
 materials = ["Clouds", "RenderChunk"]
 description = '''
-Low + box clouds
+Low + box clouds, looks better to me :)
 '''
 
 #[[subpack]]
