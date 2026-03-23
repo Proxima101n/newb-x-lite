@@ -178,8 +178,8 @@
 
 /* Galaxy */
 //#define NL_GALAXY_STARS 1.5           // [toggle] 0.1 dim - 4.0 bright
-#define NL_GALAXY_VIBRANCE 0.1          // 0.0 white - 1.0 colorful
-#define NL_GALAXY_SPEED 0.02            // 0.01 slow motion - 0.2 fast motion
+//#define NL_GALAXY_VIBRANCE 0.1          // 0.0 white - 1.0 colorful
+//#define NL_GALAXY_SPEED 0.02            // 0.01 slow motion - 0.2 fast motion
 //#define NL_GALAXY_DAY_VISIBILITY 0.0    // 0.0 invisible - 1.0 visible
 
 /* Chunk loading slide in animation */
