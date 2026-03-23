@@ -229,7 +229,7 @@
   Build tool will enable corresponding flags when compiling.
 */
 
-#ifdef LITE
+#ifdef Low
   #define NO_WAVE
   #undef NL_GLOW_SHIMMER
   #undef NL_LAVA_NOISE
@@ -240,6 +240,9 @@
   #undef NL_RAIN_MIST_OPACITY
   #undef NL_CLOUDY_FOG
   #undef NL_ENTITY_EDGE_HIGHLIGHT
+  #undef NL_GLOW_LEAK
+  #undef NL_CLOUD_SHADOW
+  #undef NL_BLINKING_TORCH
 #endif
 
 #ifdef NO_WAVE_NO_FOG
