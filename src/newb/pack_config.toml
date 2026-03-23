@@ -41,7 +41,7 @@ Rounded Clouds
 define = "BOX_CLOUDS"
 materials = ["Clouds", "RenderChunk"]
 description = '''
-Box Clouds
+Low + box clouds
 '''
 
 [[subpack]]
@@ -72,16 +72,16 @@ description = '''
 No wave effects
 '''
 
-#[[subpack]]
-#define = "LOW"
-#materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
-#description = '''
-#Many effects disabled. A bit lighter!
-#'''
-
 [[subpack]]
 define = "DEFAULT"
 materials = []
 description = '''
 Default
 '''
+
+#[[subpack]]
+#define = "LOW"
+#materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
+#description = '''
+#Many effects disabled. A bit lighter!
+#'''
