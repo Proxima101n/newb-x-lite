@@ -52,13 +52,6 @@ No fog and wave effects
 '''
 
 [[subpack]]
-define = "NO_FOG"
-materials = ["RenderChunk"]
-description = '''
-No fog effect
-'''
-
-[[subpack]]
 define = "NO_WAVE"
 materials = ["RenderChunk"]
 description = '''
@@ -70,6 +63,13 @@ define = "DEFAULT"
 materials = []
 description = '''
 Default
+'''
+
+[[subpack]]
+define = "NO_FOG"
+materials = ["RenderChunk"]
+description = '''
+No fog effect
 '''
 
 [[subpack]]
