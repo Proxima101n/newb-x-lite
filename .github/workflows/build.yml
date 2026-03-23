@@ -58,7 +58,7 @@ jobs:
           ${{ github.workspace }}/tool/data
     - run: pip install -r requirements.txt
     - run: |
-    - run: |
+        rm -rf tool/data
         mkdir -p tool/data
         wget -O tool/data/shaderc https://github.com/devendrn/newb-shader/releases/download/dev/shaderc-linux-x64
         chmod +x tool/data/shaderc
