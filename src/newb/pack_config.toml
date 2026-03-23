@@ -80,7 +80,7 @@ Default
 '''
 
 #[[subpack]]
-#define = "LOW"
+#define = "Low"
 #materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 #description = '''
 #Many effects disabled. A bit lighter!
