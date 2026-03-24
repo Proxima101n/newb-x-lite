@@ -110,7 +110,7 @@
 #define NL_WATER_BUMP 0.09        // 0.001 plain ~ 0.2 bumpy water
 #define NL_WATER_WAVE_SPEED  0.8  // 0.2 calm ~ 2.0 turbulent
 #define NL_WATER_TEX_OPACITY 0.0  // 0.0  water ~ 1.0 vanilla water texture
-#define NL_WATER_WAVE             // [toggle] wave effect
+//#define NL_WATER_WAVE             // [toggle] wave effect
 //#define NL_WATER_REFL_MASK      // [toggle] fake water reflection mask
 #define NL_WATER_TINT vec3(0.55,0.88,0.95)
 
@@ -276,6 +276,10 @@
   #undef NL_CLOUD_TYPE
   #define NL_CLOUD_TYPE 0
   #undef NL_CLOUD_SHADOW
+#endif
+
+#ifdef WATER_WAVES
+#define NL_WATER_WAVE
 #endif
 
 #endif
