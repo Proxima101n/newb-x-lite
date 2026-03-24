@@ -229,7 +229,7 @@
   Build tool will enable corresponding flags when compiling.
 */
 
-#ifdef Low
+#ifdef LOW
   #define NO_WAVE
   #undef NL_GLOW_SHIMMER
   #undef NL_LAVA_NOISE
