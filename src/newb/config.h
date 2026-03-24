@@ -99,7 +99,7 @@
 #define NL_GLOW_LEAK 0.3        // [toggle] 0.08 subtle ~ 1.0 100% brightness of NL_GLOW_TEX
 
 /* Waving */
-#define NL_PLANTS_WAVE 0.04    // [toggle] 0.02 gentle ~ 0.4 violent
+//#define NL_PLANTS_WAVE 0.04    // [toggle] 0.02 gentle ~ 0.4 violent
 #define NL_LANTERN_WAVE 0.16   // [toggle] 0.05 subtle ~ 0.4 large swing
 #define NL_WAVE_SPEED 2.5      // 0.5 slow wave ~ 5.0 very fast wave
 //#define NL_EXTRA_PLANTS_WAVE // [toggle] !dont use! wave using texture coords (1.21.0 vanilla 2048x1024)
@@ -278,8 +278,8 @@
   #undef NL_CLOUD_SHADOW
 #endif
 
-#ifdef WATER_WAVES
-#define NL_WATER_WAVE
+#ifdef PLANT_WAVE
+#define NL_PLANTS_WAVE
 #endif
 
 #endif
