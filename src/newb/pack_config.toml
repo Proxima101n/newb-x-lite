@@ -79,7 +79,7 @@ description = '''
 Low + box clouds, looks better to me :)
 '''
 
-#[[subpack]]
+[[subpack]]
 #define = "Low"
 #materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 #description = '''
