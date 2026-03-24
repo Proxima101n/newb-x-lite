@@ -31,7 +31,7 @@ Original shader by devendrn and Newb Shader Contributors
 # right-most subpack is enabled by default
 
 [[subpack]]
-define = "ROUNDED_CLOUDS"
+#define = "ROUNDED_CLOUDS"
 materials = ["Clouds"]
 description = '''
 Rounded Clouds
@@ -45,14 +45,14 @@ Chunk loading animation
 '''
 
 [[subpack]]
-define = "NO_WAVE_NO_FOG"
+#define = "NO_WAVE_NO_FOG"
 materials = ["RenderChunk"]
 description = '''
 No fog and wave effects
 '''
 
 [[subpack]]
-define = "NO_WAVE"
+#define = "NO_WAVE"
 materials = ["RenderChunk"]
 description = '''
 No wave effects
@@ -80,8 +80,8 @@ Low + box clouds, looks better to me :)
 '''
 
 [[subpack]]
-#define = "LOW"
-#materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
-#description = '''
-#Best performance.
-#'''
+define = "LOW"
+materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
+description = '''
+Best performance.
+'''
