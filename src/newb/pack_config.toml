@@ -83,5 +83,5 @@ Low + box clouds, looks better to me :)
 #define = "Low"
 #materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 #description = '''
-#Many effects disabled. A bit lighter!
+#Best performance.
 #'''
