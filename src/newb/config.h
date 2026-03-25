@@ -254,12 +254,21 @@
   #undef NL_FOG
 #endif
 
-#ifdef NO_WAVE
-  #undef NL_PLANTS_WAVE
-  #undef NL_LANTERN_WAVE
-  #undef NL_UNDERWATER_WAVE
-  #undef NL_WATER_WAVE
+#ifdef WAVE
+  #undef NL_GLOW_SHIMMER
+  #undef NL_LAVA_NOISE
+  #undef NL_WEATHER_SPECK
+  #undef NL_SHOOTING_STAR
+  #undef NL_CLOUD_AURORA_REFLECTION
+  #undef NL_UNDERWATER_STREAKS
   #undef NL_RAIN_MIST_OPACITY
+  #undef NL_CLOUDY_FOG
+  #undef NL_ENTITY_EDGE_HIGHLIGHT
+  #undef NL_GLOW_LEAK
+  #undef NL_CLOUD_SHADOW
+  #undef NL_BLINKING_TORCH
+  #define NL_PLANTS_WAVE 0.04
+  #define NL_WATER_WAVE
 #endif
 
 #ifdef CHUNK_ANIM
@@ -276,10 +285,6 @@
   #undef NL_CLOUD_TYPE
   #define NL_CLOUD_TYPE 0
   #undef NL_CLOUD_SHADOW
-#endif
-
-#ifdef PLANT_WAVE
-#define NL_PLANTS_WAVE
 #endif
 
 #endif
