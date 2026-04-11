@@ -42,7 +42,7 @@ jobs:
       with:
         name: newb-x-windows
         path: ./build/pack-windows
-  android:
+    android:
     runs-on: ubuntu-latest
     if:  ${{ (github.event.inputs.platform == 'Android') || (github.event.inputs.platform == 'All') }}
     steps:
@@ -51,23 +51,16 @@ jobs:
       with:
         python-version: '3.11' 
         cache: 'pip'
-   # - uses: actions/cache@v4
-   #   with:
-   #     key: env-files-linux-laz
-   #     path: |
-   #       ${{ github.workspace }}/tool/data
     - run: pip install -r requirements.txt
     - run: |
-        rm -rf tool/data
+        # ensure the compiler tool exists
         mkdir -p tool/data
         wget -O tool/data/shaderc https://github.com/devendrn/newb-shader/releases/download/dev/shaderc-linux-x64
         chmod +x tool/data/shaderc
-        ./build.sh setup
+        
+        # skip setup to protect your web edits
+        # run the pack command directly
         ./build.sh pack -p android -v ${{ inputs.subversion }} --no-zip
-    - uses: actions/upload-artifact@v4
-      with:
-        name: newb-x-android
-        path: ./build/pack-android
   ios:
     runs-on: ubuntu-latest
     if:  ${{ (github.event.inputs.platform == 'IOS') || (github.event.inputs.platform == 'All') }}
