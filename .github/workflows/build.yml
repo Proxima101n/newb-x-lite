@@ -31,7 +31,11 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - run: |
-        .\build.bat setup
+        # setup directory structure manually to bypass broken links
+        if not exist "tool\data\materials" mkdir "tool\data\materials"
+        xcopy /s /e /y "src\materials\*" "tool\data\materials\"
+        
+        # run pack without setup to preserve our custom files
         .\build.bat pack -p windows -v ${{ inputs.subversion }} --no-zip
     - uses: actions/upload-artifact@v4
       with:
@@ -49,9 +53,18 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - run: |
-        mkdir -p tool/data
+        # 1. create the directories the builder expects
+        mkdir -p tool/data/materials
+        
+        # 2. get the compiler binary
         wget -O tool/data/shaderc https://github.com/devendrn/newb-shader/releases/download/dev/shaderc-linux-x64
         chmod +x tool/data/shaderc
+        
+        # 3. sync your custom 1.26.10 materials into the build cache
+        # this stops the "list index out of range" error
+        cp -r src/materials/* tool/data/materials/
+        
+        # 4. run the pack command
         ./build.sh pack -p android -v ${{ inputs.subversion }} --no-zip
     - uses: actions/upload-artifact@v4
       with:
@@ -71,7 +84,8 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - run: |
-        ./build.sh setup
+        mkdir -p tool/data/materials
+        cp -r src/materials/* tool/data/materials/
         ./build.sh pack -p ios -v ${{ inputs.subversion }} --no-zip
     - uses: actions/upload-artifact@v4
       with:
@@ -89,7 +103,8 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - run: |
-        .\build.bat setup
+        if not exist "tool\data\materials" mkdir "tool\data\materials"
+        xcopy /s /e /y "src\materials\*" "tool\data\materials\"
         .\build.bat pack -p merged -v ${{ inputs.subversion }} --no-zip
     - uses: actions/upload-artifact@v4
       with:
